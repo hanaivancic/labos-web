@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=Device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Bookshop</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <a href="/home">
+                <img src="/images/logo.jpg">
+            </a>
+        </div>
+        <div id="kat"></div>
+        <div id="ikone">
+            <a href="/cart"><img src="/images/cart.jpg"></a>
+            <p id="kosarica"></p>
+            <img src="/images/search.jpg">
+        </div>
+
+        <div class="kategorije">
+            <% categories.forEach(function(category) { %>
+                <button id="<%= category.name %>"><%= category.name %></button>
+              <% }); %>
+        </div>
+
+        <div class="info">
+            <a>Kontakt: info@bookshop.hr</a>
+            <a>Newsletter</a>
+            <a>Pretplati se!</a>
+        </div>
+
+        <div class="slika">
+            <img src="/images/prezentira.jpg">
+            <a>Beskrajni svijet znanja, mašte i avanture</a>
+        </div>
+        <div id="maindiv" class="prodGrid"></div>
+
+    </div>
+</body>
+<script type="module" defer src="/scripts/kategorija.js"></script>
+</html>

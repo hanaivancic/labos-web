@@ -1,0 +1,159 @@
+*{
+    background: lightgrey;
+}
+
+.container{
+    display: grid;
+}
+
+#logo{
+    height:8rem;
+    grid-row:1/3;
+    grid-column: 1/2;
+    background-color: lightgray;
+    margin-bottom:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    height:7rem;
+    width:auto;
+}
+
+
+#ikone{
+    position: relative;
+    height:8rem;
+    grid-row:1/3;
+    grid-column:11/12;
+    background-color: lightgray;
+    margin-bottom:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ikone img{
+    height:3.5rem;
+    width:auto;
+    float:left;
+    padding:10px;
+    align-self:left;
+}
+
+#kosarica {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: larger;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+#naslov{
+    grid-column:1/12;
+    grid-row:3/4;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#naziv{
+    padding:20px;
+    margin-top:20px;
+    grid-column:1/6;
+    grid-row:4/5;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#kolicina{
+    padding:20px;
+    margin-top:20px;
+    grid-column:6/12;
+    grid-row: 4/5;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+
+
+#maindiv{
+    grid-row-start:5;
+    grid-column:1/12;
+}
+
+
+.red{
+    grid-column:1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+
+.prod{
+    width: 50%;
+    text-align: center;
+}
+
+.kolk{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ime {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding:10px;
+    font-size: large;
+    align-self: center;
+}
+
+.promijeni{
+    background-color: rgb(255,182,193);
+    border-radius: 50%;
+    width:1.5rem;
+    margin: 0 5px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+
+
+@media all and (max-width: 1024px) {
+    #logo{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    #kat{
+        grid-row: 2/3;
+        grid-column: 1/9;
+    }
+    #ikone{
+        grid-row: 2/3;
+        grid-column: 9/12;
+    }
+}
